@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Lord of the CRUDS</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="js/scripts.js"></script>
+</head>
+
+<body>
+<h1>Lord of the Rings</h1>
+<div id="searchDiv">
+	<label>Search: </label><input id="searchInput" onkeyup="search()"/> 
+</div>
+<h2>Character list</h2>
+<div id="tableDiv">
+	<table id="charTable">
+		<thead>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Race</th>
+			<th>Language</th>
+			<th>Skills</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<h2>Character creation</h2>
+<h3>Personal info</h3>
+<div id="newCharDiv">
+	<label>Name: </label><input id="nameInput"/> <label>Age: </label><input type="number" min=1" id="ageInput"/>
+</div>
+<div id="raceDiv">
+	<label>Race: </label><input id="raceInput"/> <label>Language: </label><input id="languageInput"/>
+</div>
+<div id="newSkillDiv">
+	<label>Skills: </label><input id="skillInput"/>
+</div>
+<!--<h3>Add skills</h3>
+<div id="newSkillDiv">
+	<label>New skill: </label><input id="skillInput"/>
+</div>
+<div><button type="button" id="addSkillButton" onclick="javascript:addOrUpdateSkill();" >Add/Update</button></div>-->
+<div><button type="button" id="addCharacterButton" onclick="javascript:addOrUpdate();" >Add/Update</button></div>
+</body>
+</html>
